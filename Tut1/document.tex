@@ -7,6 +7,7 @@
 \author{Jan Haag (jan.haag@student.kit.edu)}
 \title{Programmieren Tutorium 1 -- Klassen und Objekte}
 \institute{Institut f\"{u}r Zeritfizierbare und Vertrauensw\"{u}rdige Informatiksysteme (ZVI)}
+\TitleImage[scale=0.225]{frontpic.jpg}
 
 \begin{document}
 \begin{frame}
@@ -69,15 +70,52 @@
 \begin{verbatim}
 public class Example {
     Typ attribut1;
-    int zahl;
+    int zahl = 1;
 }
 \end{verbatim}
 \end{frame}
 
-\subsection{Aufgabe}
+\subsection{Aufgaben}
 \begin{frame}
 \frametitle{Modellierung eines Autos}
 Was macht ein Auto aus? Modelliere es durch passende Klassen und Objekte.
 \end{frame}
 
+\begin{frame}[fragile]
+\frametitle{Theorie...}
+Werten Sie folgende Ausdr\"{u}cke aus.
+\begin{verbatim}
+boolean a = true;
+boolean b = false;
+boolean c = true;
+boolean d;
+d = !a;
+d = a && b;
+d = !a || !c;
+d = (a && b) || !c;
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Theorie...}
+Werten Sie folgende Ausdr\"{u}cke aus.
+\begin{verbatim}
+int i = 2;
+double d = 3.14;
+// Betrachten Sie die Zeilen unabhaengig voneinander
+int result = i + 12;
+double result = i / 5;
+int result = i / 6;
+int result = 7 % i;
+int result = 7 / i;
+double result = i / d;
+double result = 2 / 3;
+double result = 2 / 3.0;
+\end{verbatim}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ende}
+\includegraphics[scale=0.25]{good_code.png}
+\end{frame}
 \end{document}
