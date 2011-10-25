@@ -1,0 +1,9 @@
+*.aux
+*.bib
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.class

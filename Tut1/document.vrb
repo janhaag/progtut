@@ -1,7 +1,0 @@
-\frametitle {Aufbau einer Klasse}
-\begin{verbatim}
-public class Example {
-    Typ attribut1;
-    int zahl;
-
-\end{verbatim}
