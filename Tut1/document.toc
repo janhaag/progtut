@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Organisatorisches}{3}{0}{1}
+\beamer@sectionintoc {2}{Java -- Installation und Verwendung}{4}{0}{2}
+\beamer@sectionintoc {3}{Java -- Funktion}{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{Aufgabe}{7}{0}{3}
