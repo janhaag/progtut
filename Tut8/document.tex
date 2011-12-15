@@ -1,0 +1,66 @@
+\batchmode
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+
+\usetheme[deutsch]{KIT}
+\author{Jan Haag (jan.haag@student.kit.edu)}
+\title{Programmieren Tutorium 8 -- Vererbung}
+\institute{Institut f\"{u}r Zeritfizierbare und Vertrauensw\"{u}rdige Informatiksysteme (ZVI)}
+\TitleImage[scale=0.225]{frontpic.jpg}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Inhalt}
+\tableofcontents
+\end{frame}
+
+\section{Vererbung}
+\begin{frame}
+\frametitle{Vererbung}
+\begin{itemize}
+\item Verhindert Code-Duplikate
+\item Hilft \"{a}hnliche Daten / Funktionen zusammenzuhalten
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Schl\"{u}sselwoerter}
+\begin{itemize}
+\item \verb|extends|
+\item \verb|super|
+\item \verb|instanceof|
+\item \verb|@Override|
+\item Modifier: \verb|private, protected, public|
+\item \verb|abstract|
+\item \verb|final|
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Dynamische Bindung}
+\begin{itemize}
+\item Namen werden zur Laufzeit aufgel\"{o}st
+\item Der Laufzeittyp entscheidet, welche Methode aufgerufen wird
+\end{itemize}
+$\rightarrow{}$ Gilt \emph{nicht} f\"{u}r Attribute!
+\end{frame}
+
+\section{Aufgabe}
+\begin{frame}[fragile]
+\frametitle{Aufgabe}
+Implemeniteren Sie eine Sortierte Liste, indem Sie von der Klasse
+\verb|java.util.ArrayList| vererben. Verwenden Sie dazu die vorlage aus dem
+Repository.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ende}
+\includegraphics[scale=0.4]{porn_folder.png}
+\end{frame}
+\end{document}
