@@ -1,0 +1,104 @@
+\batchmode
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+
+\usetheme[deutsch]{KIT}
+\author{Jan Haag (jan.haag@student.kit.edu)}
+\title{Programmieren Tutorium 4 -- Sichtbarkeiten, Arrays}
+\institute{Institut f\"{u}r Zeritfizierbare und Vertra\"{u}nsw\"{u}rdige Informatiksysteme (ZVI)}
+\TitleImage[scale=0.225]{frontpic.jpg}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Inhalt}
+\tableofcontents
+\end{frame}
+
+\section{Sichtbarkeiten}
+\begin{frame}[fragile]
+\frametitle{Sichtbarkeiten}
+\begin{tabular}{l|l}
+Sichtbarkeit & Wirkung\\
+\hline
+\verb|public| & F\"{u}r alle sichtbar\\
+ & F\"{u}r alle innerhalb des gleichen package sichtbar\\
+\verb|protected| & Nur f\"{u}r \glqq{}verwandte\grqq{} sichtbar\\
+\verb|private| & Nur innerhalb der Klasse sichtbar\\
+\end{tabular}
+\end{frame}
+
+\section{Arrays}
+\begin{frame}
+\frametitle{Arrays -- Motivation}
+\begin{itemize}
+\item Speichern eine beliebige Menge an Daten (auch andere Arrays)
+\item Sehr schnelles Lesen und Schreiben aller Elemente
+\item Platzsparend
+\end{itemize}
+\pause
+aber: Werteanzahl ist nach dem erstellen nicht mehr \"{a}nderbar!
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Arrays}
+\begin{verbatim}
+public class Demo {
+    private int[] demo;
+
+    public Demo(int[] d) {
+        demo = d;
+    }
+
+    public int getElem(int pos) {
+        return demo[pos];
+    }
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Arrays}
+\begin{verbatim}
+    public String toString() {
+        String result = "";
+        for (int i:demo) {
+            result += i + " ";
+        }
+        return result;
+    }
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Arrays}
+\begin{verbatim}
+    public static void main(String... args) {
+        int[] is = new int[5];
+        for (int i = 0; i < is.length; i++) {
+            is[i] = i + 1;
+        Demo d = new Demo(is);
+        System.out.println(d.getElem(1));
+        System.out.println(d);
+    }
+}
+\end{verbatim}
+\end{frame}
+
+\section{Aufgaben}
+\begin{frame}
+\frametitle{Aufgabe}
+$$(AB)_{i,j}=\sum^{p}_{k=1}A_{ik}B_{kj}$$
+$n,p,m\in\mathbb{N}$; $A\in{}\mathbb{R}^{m\times{}p}$;
+$B\in\mathbb{R}^{p\times{}n}$
+\end{frame}
+
+\begin{frame}
+\frametitle{Ende}
+\includegraphics[scale=0.4]{unpickable-1.png}
+\end{frame}
+\end{document}
