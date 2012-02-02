@@ -40,6 +40,9 @@ Die \"{u}blichen Pr\"{a}zedenzregeln und Klammern sollen beachtet werden.
 
 \begin{frame}[fragile]
 \frametitle{Ende}
-\includegraphics[scale=0.3]{python.png}
+%\includegraphics[scale=1.0]{(.png}\\\vspace{1\baselineskip}
+<<\verb|Brains aside, I wonder how many poorly-written|\\
+\verb|xkcd.com-parsing scripts will break on this title|\\
+\verb|(or \;;";\''{<<;[' this mouseover text.";|>>
 \end{frame}
 \end{document}
