@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g 2012-02-02 22:20:09
+// $ANTLR 3.4 Abschlussaufgabe.g 2012-02-03 09:24:50
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -52,7 +52,7 @@ public TreeAdaptor getTreeAdaptor() {
     return adaptor;
 }
     public String[] getTokenNames() { return AbschlussaufgabeParser.tokenNames; }
-    public String getGrammarFileName() { return "/home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g"; }
+    public String getGrammarFileName() { return "Abschlussaufgabe.g"; }
 
 
     public static class program_return extends ParserRuleReturnScope {
@@ -62,7 +62,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "program"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:8:1: program : ( statement )* EOF ;
+    // Abschlussaufgabe.g:8:1: program : ( statement )* EOF ;
     public final AbschlussaufgabeParser.program_return program() throws RecognitionException {
         AbschlussaufgabeParser.program_return retval = new AbschlussaufgabeParser.program_return();
         retval.start = input.LT(1);
@@ -77,13 +77,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree EOF2_tree=null;
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:8:9: ( ( statement )* EOF )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:8:11: ( statement )* EOF
+            // Abschlussaufgabe.g:8:9: ( ( statement )* EOF )
+            // Abschlussaufgabe.g:8:11: ( statement )* EOF
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:8:11: ( statement )*
+            // Abschlussaufgabe.g:8:11: ( statement )*
             loop1:
             do {
                 int alt1=2;
@@ -96,7 +96,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:8:11: statement
+            	    // Abschlussaufgabe.g:8:11: statement
             	    {
             	    pushFollow(FOLLOW_statement_in_program31);
             	    statement1=statement();
@@ -152,7 +152,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "statement"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:11:1: statement : ( variable_declaration | print ) ';' !;
+    // Abschlussaufgabe.g:11:1: statement : ( variable_declaration | print ) ';' !;
     public final AbschlussaufgabeParser.statement_return statement() throws RecognitionException {
         AbschlussaufgabeParser.statement_return retval = new AbschlussaufgabeParser.statement_return();
         retval.start = input.LT(1);
@@ -169,13 +169,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal5_tree=null;
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:12:2: ( ( variable_declaration | print ) ';' !)
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:12:4: ( variable_declaration | print ) ';' !
+            // Abschlussaufgabe.g:12:2: ( ( variable_declaration | print ) ';' !)
+            // Abschlussaufgabe.g:12:4: ( variable_declaration | print ) ';' !
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:12:4: ( variable_declaration | print )
+            // Abschlussaufgabe.g:12:4: ( variable_declaration | print )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -194,7 +194,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:12:5: variable_declaration
+                    // Abschlussaufgabe.g:12:5: variable_declaration
                     {
                     pushFollow(FOLLOW_variable_declaration_in_statement46);
                     variable_declaration3=variable_declaration();
@@ -206,7 +206,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:12:28: print
+                    // Abschlussaufgabe.g:12:28: print
                     {
                     pushFollow(FOLLOW_print_in_statement50);
                     print4=print();
@@ -254,7 +254,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "print"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:15:1: print : 'print' ^ expression ;
+    // Abschlussaufgabe.g:15:1: print : 'print' ^ expression ;
     public final AbschlussaufgabeParser.print_return print() throws RecognitionException {
         AbschlussaufgabeParser.print_return retval = new AbschlussaufgabeParser.print_return();
         retval.start = input.LT(1);
@@ -269,8 +269,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal6_tree=null;
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:15:7: ( 'print' ^ expression )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:15:9: 'print' ^ expression
+            // Abschlussaufgabe.g:15:7: ( 'print' ^ expression )
+            // Abschlussaufgabe.g:15:9: 'print' ^ expression
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -320,7 +320,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "variable_declaration"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:18:1: variable_declaration : ID ':=' ^ expression ;
+    // Abschlussaufgabe.g:18:1: variable_declaration : ID ':=' ^ expression ;
     public final AbschlussaufgabeParser.variable_declaration_return variable_declaration() throws RecognitionException {
         AbschlussaufgabeParser.variable_declaration_return retval = new AbschlussaufgabeParser.variable_declaration_return();
         retval.start = input.LT(1);
@@ -337,8 +337,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal9_tree=null;
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:19:2: ( ID ':=' ^ expression )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:19:4: ID ':=' ^ expression
+            // Abschlussaufgabe.g:19:2: ( ID ':=' ^ expression )
+            // Abschlussaufgabe.g:19:4: ID ':=' ^ expression
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -395,7 +395,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expression"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:22:1: expression : string_concat ;
+    // Abschlussaufgabe.g:22:1: expression : string_concat ;
     public final AbschlussaufgabeParser.expression_return expression() throws RecognitionException {
         AbschlussaufgabeParser.expression_return retval = new AbschlussaufgabeParser.expression_return();
         retval.start = input.LT(1);
@@ -408,8 +408,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:23:2: ( string_concat )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:23:4: string_concat
+            // Abschlussaufgabe.g:23:2: ( string_concat )
+            // Abschlussaufgabe.g:23:4: string_concat
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -452,7 +452,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "string_concat"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:26:1: string_concat : parenthesized_expression ( '++' ^ parenthesized_expression )* ;
+    // Abschlussaufgabe.g:26:1: string_concat : parenthesized_expression ( '++' ^ parenthesized_expression )* ;
     public final AbschlussaufgabeParser.string_concat_return string_concat() throws RecognitionException {
         AbschlussaufgabeParser.string_concat_return retval = new AbschlussaufgabeParser.string_concat_return();
         retval.start = input.LT(1);
@@ -469,8 +469,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal13_tree=null;
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:27:2: ( parenthesized_expression ( '++' ^ parenthesized_expression )* )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:27:4: parenthesized_expression ( '++' ^ parenthesized_expression )*
+            // Abschlussaufgabe.g:27:2: ( parenthesized_expression ( '++' ^ parenthesized_expression )* )
+            // Abschlussaufgabe.g:27:4: parenthesized_expression ( '++' ^ parenthesized_expression )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -482,7 +482,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, parenthesized_expression12.getTree());
 
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:27:29: ( '++' ^ parenthesized_expression )*
+            // Abschlussaufgabe.g:27:29: ( '++' ^ parenthesized_expression )*
             loop3:
             do {
                 int alt3=2;
@@ -495,7 +495,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt3) {
             	case 1 :
-            	    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:27:30: '++' ^ parenthesized_expression
+            	    // Abschlussaufgabe.g:27:30: '++' ^ parenthesized_expression
             	    {
             	    string_literal13=(Token)match(input,12,FOLLOW_12_in_string_concat108); 
             	    string_literal13_tree = 
@@ -551,7 +551,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "parenthesized_expression"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:30:1: parenthesized_expression : ( ID | literal | '(' ! expression ')' !);
+    // Abschlussaufgabe.g:30:1: parenthesized_expression : ( ID | literal | '(' ! expression ')' !);
     public final AbschlussaufgabeParser.parenthesized_expression_return parenthesized_expression() throws RecognitionException {
         AbschlussaufgabeParser.parenthesized_expression_return retval = new AbschlussaufgabeParser.parenthesized_expression_return();
         retval.start = input.LT(1);
@@ -572,7 +572,7 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal19_tree=null;
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:31:2: ( ID | literal | '(' ! expression ')' !)
+            // Abschlussaufgabe.g:31:2: ( ID | literal | '(' ! expression ')' !)
             int alt4=3;
             switch ( input.LA(1) ) {
             case ID:
@@ -601,7 +601,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt4) {
                 case 1 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:31:4: ID
+                    // Abschlussaufgabe.g:31:4: ID
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -616,7 +616,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:32:4: literal
+                    // Abschlussaufgabe.g:32:4: literal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -631,7 +631,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:33:4: '(' ! expression ')' !
+                    // Abschlussaufgabe.g:33:4: '(' ! expression ')' !
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -680,7 +680,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "literal"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:36:1: literal : ( INT | STRING );
+    // Abschlussaufgabe.g:36:1: literal : ( INT | STRING );
     public final AbschlussaufgabeParser.literal_return literal() throws RecognitionException {
         AbschlussaufgabeParser.literal_return retval = new AbschlussaufgabeParser.literal_return();
         retval.start = input.LT(1);
@@ -693,8 +693,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set20_tree=null;
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:36:9: ( INT | STRING )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:
+            // Abschlussaufgabe.g:36:9: ( INT | STRING )
+            // Abschlussaufgabe.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 

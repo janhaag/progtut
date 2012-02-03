@@ -11,17 +11,8 @@ public class IntegerValue implements Value {
         this.v = v;
     }
 
-    /**
-     * {@inheritDoc}
-     * @see Value#evaluate(String,Value)
-     */
-    public Value evaluate(String op, Value v) {
-        switch (op) {
-            case "++":
-                return new StringValue(toString() + v.toString());
-            default:
-                throw new IllegalArgumentException(op + "is not an operator.");
-        }
+    public Value evaluate(OpConcat op, Value v) {
+        return new StringValue(toString() + v.toString());
     }
 
     public String toString() {

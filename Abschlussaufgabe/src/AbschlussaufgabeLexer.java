@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g 2012-02-02 22:20:09
+// $ANTLR 3.4 Abschlussaufgabe.g 2012-02-03 09:24:51
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -34,15 +34,15 @@ public class AbschlussaufgabeLexer extends Lexer {
     public AbschlussaufgabeLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g"; }
+    public String getGrammarFileName() { return "Abschlussaufgabe.g"; }
 
     // $ANTLR start "T__10"
     public final void mT__10() throws RecognitionException {
         try {
             int _type = T__10;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:2:7: ( '(' )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:2:9: '('
+            // Abschlussaufgabe.g:2:7: ( '(' )
+            // Abschlussaufgabe.g:2:9: '('
             {
             match('('); 
 
@@ -62,8 +62,8 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = T__11;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:3:7: ( ')' )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:3:9: ')'
+            // Abschlussaufgabe.g:3:7: ( ')' )
+            // Abschlussaufgabe.g:3:9: ')'
             {
             match(')'); 
 
@@ -83,8 +83,8 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = T__12;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:4:7: ( '++' )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:4:9: '++'
+            // Abschlussaufgabe.g:4:7: ( '++' )
+            // Abschlussaufgabe.g:4:9: '++'
             {
             match("++"); 
 
@@ -106,8 +106,8 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:5:7: ( ':=' )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:5:9: ':='
+            // Abschlussaufgabe.g:5:7: ( ':=' )
+            // Abschlussaufgabe.g:5:9: ':='
             {
             match(":="); 
 
@@ -129,8 +129,8 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:6:7: ( ';' )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:6:9: ';'
+            // Abschlussaufgabe.g:6:7: ( ';' )
+            // Abschlussaufgabe.g:6:9: ';'
             {
             match(';'); 
 
@@ -150,8 +150,8 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:7:7: ( 'print' )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:7:9: 'print'
+            // Abschlussaufgabe.g:7:7: ( 'print' )
+            // Abschlussaufgabe.g:7:9: 'print'
             {
             match("print"); 
 
@@ -173,8 +173,8 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:40:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:40:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // Abschlussaufgabe.g:40:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // Abschlussaufgabe.g:40:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -186,7 +186,7 @@ public class AbschlussaufgabeLexer extends Lexer {
             }
 
 
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:40:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // Abschlussaufgabe.g:40:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -199,7 +199,7 @@ public class AbschlussaufgabeLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:
+            	    // Abschlussaufgabe.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -236,10 +236,10 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:43:5: ( ( '0' .. '9' )+ )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:43:7: ( '0' .. '9' )+
+            // Abschlussaufgabe.g:43:5: ( ( '0' .. '9' )+ )
+            // Abschlussaufgabe.g:43:7: ( '0' .. '9' )+
             {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:43:7: ( '0' .. '9' )+
+            // Abschlussaufgabe.g:43:7: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -253,7 +253,7 @@ public class AbschlussaufgabeLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:
+            	    // Abschlussaufgabe.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -294,7 +294,7 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:47:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // Abschlussaufgabe.g:47:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -324,13 +324,13 @@ public class AbschlussaufgabeLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:47:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // Abschlussaufgabe.g:47:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
 
 
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:47:14: (~ ( '\\n' | '\\r' ) )*
+                    // Abschlussaufgabe.g:47:14: (~ ( '\\n' | '\\r' ) )*
                     loop3:
                     do {
                         int alt3=2;
@@ -343,7 +343,7 @@ public class AbschlussaufgabeLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:
+                    	    // Abschlussaufgabe.g:
                     	    {
                     	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
                     	        input.consume();
@@ -364,7 +364,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                     } while (true);
 
 
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:47:28: ( '\\r' )?
+                    // Abschlussaufgabe.g:47:28: ( '\\r' )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -373,7 +373,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:47:28: '\\r'
+                            // Abschlussaufgabe.g:47:28: '\\r'
                             {
                             match('\r'); 
 
@@ -390,13 +390,13 @@ public class AbschlussaufgabeLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:48:9: '/*' ( options {greedy=false; } : . )* '*/'
+                    // Abschlussaufgabe.g:48:9: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
 
 
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:48:14: ( options {greedy=false; } : . )*
+                    // Abschlussaufgabe.g:48:14: ( options {greedy=false; } : . )*
                     loop5:
                     do {
                         int alt5=2;
@@ -421,7 +421,7 @@ public class AbschlussaufgabeLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:48:42: .
+                    	    // Abschlussaufgabe.g:48:42: .
                     	    {
                     	    matchAny(); 
 
@@ -458,8 +458,8 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:51:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:51:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // Abschlussaufgabe.g:51:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // Abschlussaufgabe.g:51:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -489,12 +489,12 @@ public class AbschlussaufgabeLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:59:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:59:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+            // Abschlussaufgabe.g:59:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+            // Abschlussaufgabe.g:59:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
 
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:59:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+            // Abschlussaufgabe.g:59:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
             loop7:
             do {
                 int alt7=3;
@@ -510,7 +510,7 @@ public class AbschlussaufgabeLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:59:14: ESC_SEQ
+            	    // Abschlussaufgabe.g:59:14: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
@@ -518,7 +518,7 @@ public class AbschlussaufgabeLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:59:24: ~ ( '\\\\' | '\"' )
+            	    // Abschlussaufgabe.g:59:24: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -555,8 +555,8 @@ public class AbschlussaufgabeLexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:65:5: ( '\\\\' ( 'n' | '\\\"' | '\\\\' ) )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:65:9: '\\\\' ( 'n' | '\\\"' | '\\\\' )
+            // Abschlussaufgabe.g:65:5: ( '\\\\' ( 'n' | '\\\"' | '\\\\' ) )
+            // Abschlussaufgabe.g:65:9: '\\\\' ( 'n' | '\\\"' | '\\\\' )
             {
             match('\\'); 
 
@@ -581,7 +581,7 @@ public class AbschlussaufgabeLexer extends Lexer {
     // $ANTLR end "ESC_SEQ"
 
     public void mTokens() throws RecognitionException {
-        // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:8: ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | ID | INT | COMMENT | WS | STRING )
+        // Abschlussaufgabe.g:1:8: ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | ID | INT | COMMENT | WS | STRING )
         int alt8=11;
         switch ( input.LA(1) ) {
         case '(':
@@ -747,7 +747,7 @@ public class AbschlussaufgabeLexer extends Lexer {
 
         switch (alt8) {
             case 1 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:10: T__10
+                // Abschlussaufgabe.g:1:10: T__10
                 {
                 mT__10(); 
 
@@ -755,7 +755,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:16: T__11
+                // Abschlussaufgabe.g:1:16: T__11
                 {
                 mT__11(); 
 
@@ -763,7 +763,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:22: T__12
+                // Abschlussaufgabe.g:1:22: T__12
                 {
                 mT__12(); 
 
@@ -771,7 +771,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:28: T__13
+                // Abschlussaufgabe.g:1:28: T__13
                 {
                 mT__13(); 
 
@@ -779,7 +779,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:34: T__14
+                // Abschlussaufgabe.g:1:34: T__14
                 {
                 mT__14(); 
 
@@ -787,7 +787,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:40: T__15
+                // Abschlussaufgabe.g:1:40: T__15
                 {
                 mT__15(); 
 
@@ -795,7 +795,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:46: ID
+                // Abschlussaufgabe.g:1:46: ID
                 {
                 mID(); 
 
@@ -803,7 +803,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:49: INT
+                // Abschlussaufgabe.g:1:49: INT
                 {
                 mINT(); 
 
@@ -811,7 +811,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:53: COMMENT
+                // Abschlussaufgabe.g:1:53: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -819,7 +819,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:61: WS
+                // Abschlussaufgabe.g:1:61: WS
                 {
                 mWS(); 
 
@@ -827,7 +827,7 @@ public class AbschlussaufgabeLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/Abschlussaufgabe.g:1:64: STRING
+                // Abschlussaufgabe.g:1:64: STRING
                 {
                 mSTRING(); 
 

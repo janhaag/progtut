@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g 2012-02-02 22:39:45
+// $ANTLR 3.4 AbschlussaufgabeInterpreter.g 2012-02-03 09:24:58
 
 import java.util.HashMap;
 
@@ -45,7 +45,7 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
     }
 
     public String[] getTokenNames() { return AbschlussaufgabeInterpreter.tokenNames; }
-    public String getGrammarFileName() { return "/home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g"; }
+    public String getGrammarFileName() { return "AbschlussaufgabeInterpreter.g"; }
 
 
     HashMap<String, Value> vars = new HashMap<String, Value>();
@@ -53,13 +53,13 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
 
 
     // $ANTLR start "program"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:16:1: program : ( statement )* ;
+    // AbschlussaufgabeInterpreter.g:16:1: program : ( statement )* ;
     public final void program() throws RecognitionException {
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:16:9: ( ( statement )* )
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:16:11: ( statement )*
+            // AbschlussaufgabeInterpreter.g:16:9: ( ( statement )* )
+            // AbschlussaufgabeInterpreter.g:16:11: ( statement )*
             {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:16:11: ( statement )*
+            // AbschlussaufgabeInterpreter.g:16:11: ( statement )*
             loop1:
             do {
                 int alt1=2;
@@ -72,7 +72,7 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:16:11: statement
+            	    // AbschlussaufgabeInterpreter.g:16:11: statement
             	    {
             	    pushFollow(FOLLOW_statement_in_program45);
             	    statement();
@@ -107,7 +107,7 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
 
 
     // $ANTLR start "statement"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:19:1: statement : ( ^( ':=' ID expression ) | ^( 'print' expression ) );
+    // AbschlussaufgabeInterpreter.g:19:1: statement : ( ^( ':=' ID expression ) | ^( 'print' expression ) );
     public final void statement() throws RecognitionException {
         CommonTree ID1=null;
         Value expression2 =null;
@@ -116,7 +116,7 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
 
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:20:2: ( ^( ':=' ID expression ) | ^( 'print' expression ) )
+            // AbschlussaufgabeInterpreter.g:20:2: ( ^( ':=' ID expression ) | ^( 'print' expression ) )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -135,7 +135,7 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:20:4: ^( ':=' ID expression )
+                    // AbschlussaufgabeInterpreter.g:20:4: ^( ':=' ID expression )
                     {
                     match(input,13,FOLLOW_13_in_statement58); 
 
@@ -156,12 +156,12 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
                     }
                     break;
                 case 2 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:21:8: ^( 'print' expression )
+                    // AbschlussaufgabeInterpreter.g:21:8: ^( 'print' expression )
                     {
-                    match(input,15,FOLLOW_15_in_statement76); 
+                    match(input,15,FOLLOW_15_in_statement75); 
 
                     match(input, Token.DOWN, null); 
-                    pushFollow(FOLLOW_expression_in_statement78);
+                    pushFollow(FOLLOW_expression_in_statement77);
                     expression3=expression();
 
                     state._fsp--;
@@ -192,7 +192,7 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
 
 
     // $ANTLR start "expression"
-    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:24:1: expression returns [ Value result ] : ( ^( '++' v1= expression v2= expression ) | ID | STRING | INT );
+    // AbschlussaufgabeInterpreter.g:24:1: expression returns [ Value result ] : ( ^( '++' v1= expression v2= expression ) | ID | STRING | INT );
     public final Value expression() throws RecognitionException {
         Value result = null;
 
@@ -206,7 +206,7 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
 
 
         try {
-            // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:25:2: ( ^( '++' v1= expression v2= expression ) | ID | STRING | INT )
+            // AbschlussaufgabeInterpreter.g:25:2: ( ^( '++' v1= expression v2= expression ) | ID | STRING | INT )
             int alt3=4;
             switch ( input.LA(1) ) {
             case 12:
@@ -239,18 +239,18 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
 
             switch (alt3) {
                 case 1 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:25:4: ^( '++' v1= expression v2= expression )
+                    // AbschlussaufgabeInterpreter.g:25:4: ^( '++' v1= expression v2= expression )
                     {
-                    match(input,12,FOLLOW_12_in_expression97); 
+                    match(input,12,FOLLOW_12_in_expression96); 
 
                     match(input, Token.DOWN, null); 
-                    pushFollow(FOLLOW_expression_in_expression101);
+                    pushFollow(FOLLOW_expression_in_expression100);
                     v1=expression();
 
                     state._fsp--;
 
 
-                    pushFollow(FOLLOW_expression_in_expression105);
+                    pushFollow(FOLLOW_expression_in_expression104);
                     v2=expression();
 
                     state._fsp--;
@@ -259,32 +259,32 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
                     match(input, Token.UP, null); 
 
 
-                    result = v1.evaluate("++", v2);
+                    result = v1.evaluate(new OpConcat(), v2);
 
                     }
                     break;
                 case 2 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:26:4: ID
+                    // AbschlussaufgabeInterpreter.g:26:4: ID
                     {
-                    ID4=(CommonTree)match(input,ID,FOLLOW_ID_in_expression113); 
+                    ID4=(CommonTree)match(input,ID,FOLLOW_ID_in_expression112); 
 
                     result = vars.get((ID4!=null?ID4.getText():null));
 
                     }
                     break;
                 case 3 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:27:4: STRING
+                    // AbschlussaufgabeInterpreter.g:27:4: STRING
                     {
-                    STRING5=(CommonTree)match(input,STRING,FOLLOW_STRING_in_expression120); 
+                    STRING5=(CommonTree)match(input,STRING,FOLLOW_STRING_in_expression119); 
 
                     result = StringValue.parseRaw((STRING5!=null?STRING5.getText():null));
 
                     }
                     break;
                 case 4 :
-                    // /home/jan/Documents/progtut2011/Abschlussaufgabe/src/AbschlussaufgabeInterpreter.g:28:4: INT
+                    // AbschlussaufgabeInterpreter.g:28:4: INT
                     {
-                    INT6=(CommonTree)match(input,INT,FOLLOW_INT_in_expression127); 
+                    INT6=(CommonTree)match(input,INT,FOLLOW_INT_in_expression126); 
 
                     result = IntegerValue.parseRaw((INT6!=null?INT6.getText():null));
 
@@ -314,13 +314,13 @@ public class AbschlussaufgabeInterpreter extends TreeParser {
     public static final BitSet FOLLOW_13_in_statement58 = new BitSet(new long[]{0x0000000000000004L});
     public static final BitSet FOLLOW_ID_in_statement60 = new BitSet(new long[]{0x00000000000011C0L});
     public static final BitSet FOLLOW_expression_in_statement62 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_15_in_statement76 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expression_in_statement78 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_12_in_expression97 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expression_in_expression101 = new BitSet(new long[]{0x00000000000011C0L});
-    public static final BitSet FOLLOW_expression_in_expression105 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_ID_in_expression113 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_STRING_in_expression120 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_INT_in_expression127 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_statement75 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expression_in_statement77 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_12_in_expression96 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expression_in_expression100 = new BitSet(new long[]{0x00000000000011C0L});
+    public static final BitSet FOLLOW_expression_in_expression104 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_ID_in_expression112 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STRING_in_expression119 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_INT_in_expression126 = new BitSet(new long[]{0x0000000000000002L});
 
 }

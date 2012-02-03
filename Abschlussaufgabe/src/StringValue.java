@@ -39,15 +39,7 @@ public class StringValue implements Value {
         return v;
     }
 
-    public Value evaluate(String op, Value v) {
-        Value result;
-        switch (op) {
-            case "++":
-                result = new StringValue(toString() + v.toString());
-                break;
-            default:
-                throw new IllegalArgumentException(op + "is no operator.");
-        }
-        return result;
+    public Value evaluate(OpConcat op, Value v) {
+        return new StringValue(toString() + v.toString());
     }
 }
