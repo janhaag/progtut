@@ -6,7 +6,7 @@
 \usetheme[deutsch]{KIT}
 \author{Jan Haag (jan.haag@student.kit.edu)}
 \title{Programmieren Tutorium 1 -- Klassen und Objekte}
-\institute{Institut f\"{u}r Zeritfizierbare und Vertrauensw\"{u}rdige Informatiksysteme (ZVI)}
+\institute{Institut f\"{u}r Theoretische Informatik}
 \TitleImage[scale=0.225]{frontpic.jpg}
 
 \begin{document}
@@ -64,6 +64,44 @@
 \frametitle{Funktion des JDK}
 \end{frame}
 
+
+\section{Konventionen}
+\begin{frame}
+    \frametitle{Konventionen}
+    \begin{itemize}
+        \item Helfen, code verst\"{a}ndlich zu halten
+        \item Helfen programmen, die Code analysieren
+            \pause
+        \item Sorgen daf\"{u}r, dass andere (auch ihr selbst, in 8 wochen!) nachvollziehen k\"{o}nnen, was der code tut.
+            \pause
+        \item \emph{Nichteinhaltung f\"{u}hrt zu Punktabzug!}
+    \end{itemize}
+\end{frame}
+
+\subsection{Namen}
+\begin{frame}[fragile]
+    \frametitle{Namenskonventionen}
+    \begin{itemize}
+        \item Namen in CamelCase
+        \item Klassennamen gross (\verb|class MyClass { XXX }|)
+        \item Variablennamen klein, Namen i. d. R. Substantive (\verb|int importantIntVariable;|)
+        \item Laufvariablen mit einem buchstaben, Namen i. d. R anfangsbuchstabe des
+            typen oder darauf folgende buchstaben (\verb|for(int i = 0; i < 10; i++) { XXX }|)
+        \item Methodennamen klein, Namen i. d. R. Verben (\verb|int doSomething(int foo) { XXX }|)
+        \item Methoden zum Lesen oder Schreiben von Attributen hei\ss{}en getAttr bzw. setAttr
+        \item Konstanten in gro\ss{}buchstaben, w\"{o}rter durch \verb|_|
+            getrennt (\verb|public static final int IMPORTANT_CONSTANT = 1;|)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Dateien und Inhalte}
+    \begin{itemize}
+        \item Jede Klasse in eine eigene Datei
+        \item Dateiname: Klassenname.java
+    \end{itemize}
+\end{frame}
+
 \section{Java -- Funktion}
 \begin{frame}[fragile]
 \frametitle{Aufbau einer Klasse}
@@ -82,7 +120,7 @@ Was macht ein Auto aus? Modelliere es durch passende Klassen und Objekte.
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Theorie...}
+\frametitle{Theorie\ldots}
 Werte folgende Ausdr\"{u}cke aus.
 \begin{verbatim}
 boolean a = true;
@@ -97,7 +135,7 @@ d = (a && b) || !c;
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Theorie...}
+\frametitle{Theorie\ldots}
 Werte folgende Ausdr\"{u}cke aus.
 \begin{verbatim}
 int i = 2;
@@ -115,7 +153,14 @@ double result = 2 / 3.0;
 \end{frame}
 
 \begin{frame}
+    \frametitle{\"Ubungsaufgabe}
+    Modelliere die Lagerhaltung in einem Autoteile-Handel.
+\end{frame}
+
+\begin{frame}
 \frametitle{Ende}
-\includegraphics[scale=0.28]{good_code.png}
+\begin{center}
+\includegraphics[scale=.28]{good_code.png}
+\end{center}
 \end{frame}
 \end{document}
