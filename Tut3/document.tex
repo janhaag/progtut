@@ -5,8 +5,8 @@
 
 \usetheme[deutsch]{KIT}
 \author{Jan Haag (jan.haag@student.kit.edu)}
-\title{Programmieren Tutorium 3 -- Konventionen, Kontrollstrukturen}
-\institute{Institut f\"{u}r Zeritfizierbare und Vertra\"{u}nsw\"{u}rdige Informatiksysteme (ZVI)}
+\title{Programmieren Tutorium 3 -- Kontrollstrukturen}
+\institute{Institut f\"{u}r Theoretische Informatik}
 \TitleImage[scale=0.225]{frontpic.jpg}
 
 \begin{document}
@@ -19,61 +19,12 @@
 \tableofcontents
 \end{frame}
 
-\section{Korrektur des \"{U}bungsblattes}
-\begin{frame}
-\frametitle{Korrektur des \"{U}bungsblattes}
-Siehe Code.
-\end{frame}
-
-\section{Konventionen}
-\begin{frame}
-\frametitle{Konventionen}
-\begin{itemize}
-\item Helfen, code verst\"{a}ndlich zu halten
-\item Helfen programmen, die Code analysieren
-\pause
-\item Sorgen daf\"{u}r, dass andere (auch ihr selbst, in 8 wochen!) nachvollziehen k\"{o}nnen, was der code tut.
-\pause
-\item \emph{Nichteinhaltung f\"{u}hrt zu Punktabzug!}
-\end{itemize}
-\end{frame}
-
-\subsection{Namen}
-\begin{frame}[fragile]
-\frametitle{Namenskonventionen}
-\begin{itemize}
-\item Namen in CamelCase
-\item Klassennamen gross (\verb|class MyClass {...}|)
-\item Variablennamen klein, Namen i. d. R. Substantive (\verb|int importantIntVariable;|)
-\item Laufvariablen mit einem buchstaben, Namen i. d. R anfangsbuchstabe des
-typen oder darauf folgende buchstaben (\verb|for(int i = 0; i < 10; i++) {...}|)
-\item Methodennamen klein, Namen i. d. R. Verben (\verb|int doSomething(int foo) {...}|)
-\item Methoden zum Lesen oder Schreiben von Attributen hei\ss{}en getAttr bzw. setAttr
-\item Konstanten in gro\ss{}buchstaben, w\"{o}rter durch \verb|_|
-getrennt (\verb|public static final int IMPORTANT_CONSTANT = 1;|)
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Dateien und Inhalte}
-\begin{itemize}
-\item Jede Klasse in eine eigene Datei
-\item Dateiname: Klassenname.java
-\end{itemize}
-\end{frame}
-
-\subsection{Whitespace}
-\begin{frame}
-\frametitle{Whitespace-Konventionen}
-Siehe Dokumentation zu Checkstyle 1.
-\end{frame}
-
 \section{Kontrollstrukturen}
 \begin{frame}[fragile]
 \frametitle{Kontrollstrukturen -- if}
 \begin{verbatim}
-if (boolean) {
-    // code to run if boolean is true
+if (cond) {
+    // code to run if cond is true
 } else {
     // code to run otherwise
 }
@@ -104,8 +55,7 @@ switch (var) {
         break;
 }
 \end{verbatim}
-\pause
-$\rightarrow$ Nur f\"{u}r primitive Datentypen!
+$\rightarrow$ Nur f\"{u}r primitive Datentypen (und Strings)!
 \end{frame}
 
 \begin{frame}[fragile]
@@ -144,11 +94,11 @@ Nur in ausnahmef\"{a}llen, da verst\"{a}ndlichkeit schnell leidet\\
 Schleifenabbruch mit \verb|break;|
 \end{frame}
 
-
 \section{Aufgaben}
 \begin{frame}
 \frametitle{Aufgabe}
 $fak(0)=1$; $fak(n) = n\cdot{}fak(n-1)$
+$fib(0)=0$; $fib(1)=1$; $fib(n)=fib(n-1)+fib(n-2)$
 \end{frame}
 
 \begin{frame}
